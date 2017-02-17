@@ -1,0 +1,12 @@
+{
+  "name": "solidbrain-space-intercom",
+  "version": "1.0.0",
+  "description": "The app that controls an intercom via Azure IoT hub.",
+  "main": "app.js",
+  "license": "ISC",
+  "repository": "https://github.com/solidbrain/solidbrain-space-intercom.git",
+  "scripts": {
+    
+  },
+  "author": "rafek@solidbrain.com"
+}
