@@ -6,6 +6,7 @@ const ConnectionString = require('azure-iot-device').ConnectionString
 const Protocol = require('azure-iot-device-mqtt').Mqtt
 
 const config = require('./config.json')
+const GPIOCtrl = require('./gpio-ctrl')
 const connectionString = ConnectionString.parse(config.device_connection_string)
 const deviceId = connectionString.DeviceId
 const client = Client.fromConnectionString(config.device_connection_string, Protocol)
@@ -26,6 +27,8 @@ if (connectionString.x509) {
 function onOpenDoorCommand() {
   // TODO: implement
   console.log('Open Door command has been invoked.')
+
+  GPIOCtrl.unlockRelay()
 }
 
 client.open(err => {
