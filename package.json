@@ -6,7 +6,11 @@
   "license": "ISC",
   "repository": "https://github.com/solidbrain/solidbrain-space-intercom.git",
   "scripts": {
-    
+    "start": "node ."
   },
-  "author": "rafek@solidbrain.com"
+  "author": "rafek@solidbrain.com",
+  "devDependencies": {
+    "azure-iot-device": "^1.1.6",
+    "azure-iot-device-mqtt": "^1.1.6"
+  }
 }
