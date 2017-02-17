@@ -25,7 +25,6 @@ if (connectionString.x509) {
 }
 
 function onOpenDoorCommand() {
-  // TODO: implement
   console.log('Open Door command has been invoked.')
 
   GPIOCtrl.unlockRelay()
