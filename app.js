@@ -24,10 +24,16 @@ if (connectionString.x509) {
   console.log('[Device (' + deviceId + ')] Using X.509 client certificate authentication.')
 }
 
-function onOpenDoorCommand() {
+function onOpenDoorCommand(req, res) {
   console.log('Open Door command has been invoked.')
 
   GPIOCtrl.unlockRelay()
+
+  res.send(200, 'ok', err => {
+    if (err) {
+      console.error(err)
+    }
+  })
 }
 
 client.open(err => {
