@@ -1,0 +1,11 @@
+[Unit]
+Description=Establish connection with Azure IoT Hub for door opening service
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/node /home/pi/Projects/solidbrain-space-intercom/app.js > /home/pi/solidbrain-space-intercom.log 2>&1
+
+[Install]
+WantedBy=multi-user.target
