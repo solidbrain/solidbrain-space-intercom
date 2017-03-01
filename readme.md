@@ -55,3 +55,5 @@ Mar 01 09:42:24 raspberrypi node[513]: Open Door command has been invoked.
 Mar 01 09:42:30 raspberrypi node[513]: Open Door command has been invoked.
 Mar 01 09:42:35 raspberrypi node[513]: Open Door command has been invoked.
 ```
+
+For more information about `systemd` read [this site](https://www.freedesktop.org/software/systemd/man/systemd.service.html).
